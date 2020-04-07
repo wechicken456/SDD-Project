@@ -122,6 +122,8 @@ define the function main:
 				call the function menu_CTF
 			else if option ==3:
 				print name and current points along with unsolved challenges
+			else if option ==4:
+				write username, points and unsolved challenges to a txt file. Create the file if the file 					doesn't exist already
 		except: # error handler
 			print something if encountered an error while in the try block
 			then return to the while loop	
