@@ -369,7 +369,14 @@ def main():
                     print("Unsolved challenges: ")
                     for i in unsolved:
                         print("\t- {}".format(i))
-
+                elif option == 4:
+                    unsolved = set(all_challenges).difference(set(solved_challenges))
+                    file = open("user.txt", "w")
+                    file.write("Username: {}\n".format(name))
+                    file.write("Points: {}\n".format(points))
+                    file.write("Unsolved challenges: \n")
+                    for i in unsolved:
+                        file.write("\t- {}\n".format(i))
         except:
             print("Invalid option!!\n")
 main()
