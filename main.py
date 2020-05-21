@@ -256,7 +256,7 @@ def reverse():
 def cryptography():
     option = 0
     global points
-    while option!=0:
+    while option!=4:
         print("\nAre you good at maths? Cause you're gonna need this for these challenges, I guess..")
         print("1. The numbers (50 points)")
         print("2. Caesar (100 points)")
